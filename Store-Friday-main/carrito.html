@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carrito</title>
+    <link rel="stylesheet" href="./Css/normalize.css">
+    <link rel="stylesheet" href="./Css/stely.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<a href="carrito.html" class="carrito-flotante">
+    <img src="./img/carrito.png" alt="Carrito de compras" class="icono-carrito">
+    <span id="contador-carrito">0</span>
+</a>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="./img/logo.png" alt="logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+        <a class="navegacion__enlace" href="Iniciar-sesion.html">Iniciar Sesión</a>
+
+    </nav>
+
+    <main class="contenedor">
+        <h1>🛒 Carrito de Compras</h1>
+
+        <div class="grid grid--carrito">
+            <table class="tabla-carrito">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Talla</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Subtotal</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="carrito-lista"></tbody>
+            </table>
+        </div>
+
+        <h2 id="total-carrito">Total: $0</h2>
+
+        <div class="acciones-carrito">
+            <button class="formulario__submit acciones-carrito__btn" onclick="vaciarCarrito()">Vaciar carrito</button>
+            <button class="formulario__submit acciones-carrito__btn" onclick="finalizarCompra()">Finalizar compra</button>
+        </div>
+
+        <script>
+            function finalizarCompra() {
+                const confirmar = confirm("¿Estás seguro de que deseas finalizar la compra?");
+                if (confirmar) {
+                    window.location.href = "pago.html";
+                }
+            }
+        </script>
+    </main>
+
+    <footer class="Footer">
+        <p class="Footer__texto">Front-end store - Todos los derechos reservados 2024</p>
+    </footer>
+
+    <script src="Js/carrito-pagina.js"></script>
+</body>
+</html>

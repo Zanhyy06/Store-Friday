@@ -1,0 +1,102 @@
+/* carrito.css */
+
+/* Contenedor del carrito */
+#carritoContainer {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Título */
+#carritoContainer h3 {
+    text-align: center;
+    color: #0056b3;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Lista de items */
+#listaCarrito {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaCarrito li {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#listaCarrito li:hover {
+    background: #e6f0ff;
+}
+
+/* Botón de eliminar */
+#listaCarrito button {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+#listaCarrito button:hover {
+    background: #b02a37;
+}
+
+/* Total */
+#totalCarrito {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* Botones de acción */
+.carrito-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.carrito-actions button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-vaciar {
+    background: #ffc107;
+    color: #212529;
+}
+
+.btn-vaciar:hover {
+    background: #e0a800;
+}
+
+.btn-confirmar {
+    background: #007bff;
+    color: #fff;
+}
+
+.btn-confirmar:hover {
+    background: #0056b3;
+}

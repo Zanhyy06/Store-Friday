@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pago de la Compra</title>
+  <link rel="stylesheet" href="./Css/normalize.css">
+  <link rel="stylesheet" href="./Css/stely.css">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <style>
+    .titulo-pago, .subtitulo-pago, .label-pago {
+      font-family: 'Staatliches', cursive;
+      color: var(--secundario);
+      letter-spacing: 1px;
+    }
+    .formulario-pro {
+      background: rgba(255,255,255,0.08);
+      border-radius: 1.2rem;
+      box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+      border: 1px solid rgba(255,255,255,0.13);
+      padding: 2.5rem 2rem;
+      margin: 4rem auto;
+      max-width: 420px;
+    }
+    .formulario__campo {
+      border: 0.2rem solid var(--primarioOscuro);
+      background-color: var(--blanco);
+      color: var(--negro);
+      font-size: 1.8rem;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      width: 100%;
+      margin-bottom: 1.2rem;
+    }
+    .formulario__submit {
+      background-color: var(--secundario);
+      border: none;
+      font-size: 2rem;
+      font-family: 'Staatliches', cursive;
+      padding: 1.5rem;
+      transition: background-color .3s ease;
+      width: 100%;
+      border-radius: 0.7rem;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    .formulario__submit:hover {
+      background-color: #e6b800;
+    }
+    .mensaje-pago {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      color: var(--secundario);
+      font-family: 'Staatliches', cursive;
+      text-align: center;
+    }
+    .label-pago {
+      display: block;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+  </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" aria-label="Ir a la página principal">
+            <img class="header__logo" src="./img/logo.png" alt="Logotipo FrontEnd Store">
+        </a>
+    </header>
+
+    <main class="contenedor">
+        <h1 class="titulo-pago">💳 Finalizar Compra</h1>
+        <section>
+            <form id="form-pago" class="formulario-pro" autocomplete="off" aria-labelledby="titulo-pago">
+                <h2 class="subtitulo-pago">Selecciona tu método de pago</h2>
+                <fieldset style="border:none; padding:0; margin:0;">
+                    <legend class="sr-only">Método de pago</legend>
+                    <label for="pago-nequi" class="label-pago">
+                        <input type="radio" id="pago-nequi" name="pago" value="Nequi" required> Nequi
+                    </label>
+                    <label for="pago-daviplata" class="label-pago">
+                        <input type="radio" id="pago-daviplata" name="pago" value="Daviplata"> Daviplata
+                    </label>
+                    <label for="pago-bancolombia" class="label-pago">
+                        <input type="radio" id="pago-bancolombia" name="pago" value="Bancolombia"> Transferencia Bancolombia
+                    </label>
+                    <label for="pago-entrega" class="label-pago">
+                        <input type="radio" id="pago-entrega" name="pago" value="Contra entrega"> Pago contra entrega
+                    </label>
+                </fieldset>
+                <div id="financiera-info" style="display:none; margin-top:2rem;">
+                    <h3 class="subtitulo-pago">Información financiera</h3>
+                    <label for="titular" class="label-pago">Nombre del titular</label>
+                    <input type="text" id="titular" name="titular" class="formulario__campo" placeholder="Nombre completo" autocomplete="name">
+                    <label for="documento" class="label-pago">Documento de identidad</label>
+                    <input type="text" id="documento" name="documento" class="formulario__campo" placeholder="Número de documento" autocomplete="off">
+                    <label for="cuenta" class="label-pago">Número de cuenta o teléfono</label>
+                    <input type="text" id="cuenta" name="cuenta" class="formulario__campo" placeholder="Cuenta o número Nequi/Daviplata" autocomplete="off">
+                </div>
+                <input type="submit" class="formulario__submit" value="Confirmar Pago">
+            </form>
+            <div id="instrucciones-pago" class="mensaje-pago" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="Footer">
+        <p class="Footer__texto">Front-end store - Todos los derechos reservados 2024</p>
+    </footer>
+
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="Js/pago.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="./Css/normalize.css">
+    <link rel="stylesheet" href="./Css/stely.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<a href="carrito.html" class="carrito-flotante">
+    <img src="./img/carrito.png" alt="Carrito de compras" class="icono-carrito">
+    <span id="contador-carrito">0</span>
+</a>
+
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="./img/logo.png" alt="logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+        <a class="navegacion__enlace" href="Iniciar-sesion.html">Iniciar Sesión</a>
+        <a class="navegacion__enlace" href="crear-cuenta.html">Registrarse</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Nuestros productos</h1>
+
+        <div class="grid">
+
+            
+            <div class="producto">
+                <img class="producto__imagen" src="./img/1.jpg" alt="VueJS">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">VueJS</p>
+                    <p class="producto__precio">$5000</p>
+
+                    <form class="formulario agregar-carrito" data-nombre="VueJS" data-precio="5000">
+                        <select class="formulario__campo talla" required>
+                            <option disabled selected value="">-- Seleccionar talla --</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <input class="formulario__campo cantidad" type="number" min="1" value="1" />
+                        <input class="formulario__submit" type="submit" value="Agregar al carrito" />
+                    </form>
+                </div>
+            </div>
+
+            
+            <div class="producto">
+                <img class="producto__imagen" src="./img/2.jpg" alt="AngularJS">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">AngularJS</p>
+                    <p class="producto__precio">$65000</p>
+
+                    <form class="formulario agregar-carrito" data-nombre="AngularJS" data-precio="65000">
+                        <select class="formulario__campo talla" required>
+                            <option disabled selected value="">-- Seleccionar talla --</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <input class="formulario__campo cantidad" type="number" min="1" value="1" />
+                        <input class="formulario__submit" type="submit" value="Agregar al carrito" />
+                    </form>
+                </div>
+            </div>
+
+            
+            <div class="producto">
+                <img class="producto__imagen" src="./img/3.jpg" alt="ReactJS">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">ReactJS</p>
+                    <p class="producto__precio">$35000</p>
+
+                    <form class="formulario agregar-carrito" data-nombre="ReactJS" data-precio="35000">
+                        <select class="formulario__campo talla" required>
+                            <option disabled selected value="">-- Seleccionar talla --</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <input class="formulario__campo cantidad" type="number" min="1" value="1" />
+                        <input class="formulario__submit" type="submit" value="Agregar al carrito" />
+                    </form>
+                </div>
+            </div>
+
+            
+            <div class="producto">
+                <img class="producto__imagen" src="./img/4.jpg" alt="NodeJS">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">NodeJS</p>
+                    <p class="producto__precio">$7000</p>
+
+                    <form class="formulario agregar-carrito" data-nombre="NodeJS" data-precio="7000">
+                        <select class="formulario__campo talla" required>
+                            <option disabled selected value="">-- Seleccionar talla --</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <input class="formulario__campo cantidad" type="number" min="1" value="1" />
+                        <input class="formulario__submit" type="submit" value="Agregar al carrito" />
+                    </form>
+                </div>
+            </div>
+
+            
+            <div class="producto">
+                <img class="producto__imagen" src="./img/5.jpg" alt="HTML5">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">HTML5</p>
+                    <p class="producto__precio">$45000</p>
+
+                    <form class="formulario agregar-carrito" data-nombre="HTML5" data-precio="45000">
+                        <select class="formulario__campo talla" required>
+                            <option disabled selected value="">-- Seleccionar talla --</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <input class="formulario__campo cantidad" type="number" min="1" value="1" />
+                        <input class="formulario__submit" type="submit" value="Agregar al carrito" />
+                    </form>
+                </div>
+            </div>
+
+            
+            <div class="producto">
+                <img class="producto__imagen" src="./img/6.jpg" alt="CSS3">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">CSS3</p>
+                    <p class="producto__precio">$15000</p>
+
+                    <form class="formulario agregar-carrito" data-nombre="CSS3" data-precio="15000">
+                        <select class="formulario__campo talla" required>
+                            <option disabled selected value="">-- Seleccionar talla --</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <input class="formulario__campo cantidad" type="number" min="1" value="1" />
+                        <input class="formulario__submit" type="submit" value="Agregar al carrito" />
+                    </form>
+                </div>
+            </div>
+
+            
+            <div class="producto">
+                <img class="producto__imagen" src="./img/7.jpg" alt="GitHub">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">GitHub</p>
+                    <p class="producto__precio">$6000</p>
+
+                    <form class="formulario agregar-carrito" data-nombre="GitHub" data-precio="6000">
+                        <select class="formulario__campo talla" required>
+                            <option disabled selected value="">-- Seleccionar talla --</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <input class="formulario__campo cantidad" type="number" min="1" value="1" />
+                        <input class="formulario__submit" type="submit" value="Agregar al carrito" />
+                    </form>
+                </div>
+            </div>
+
+            
+            <div class="producto">
+                <img class="producto__imagen" src="./img/8.jpg" alt="JavaScript">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">JavaScript</p>
+                    <p class="producto__precio">$3500</p>
+
+                    <form class="formulario agregar-carrito" data-nombre="JavaScript" data-precio="3500">
+                        <select class="formulario__campo talla" required>
+                            <option disabled selected value="">-- Seleccionar talla --</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <input class="formulario__campo cantidad" type="number" min="1" value="1" />
+                        <input class="formulario__submit" type="submit" value="Agregar al carrito" />
+                    </form>
+                </div>
+            </div>
+
+            
+            <div class="producto">
+                <img class="producto__imagen" src="./img/9.jpg" alt="TypeScript">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">TypeScript</p>
+                    <p class="producto__precio">$18000</p>
+
+                    <form class="formulario agregar-carrito" data-nombre="TypeScript" data-precio="18000">
+                        <select class="formulario__campo talla" required>
+                            <option disabled selected value="">-- Seleccionar talla --</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <input class="formulario__campo cantidad" type="number" min="1" value="1" />
+                        <input class="formulario__submit" type="submit" value="Agregar al carrito" />
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        
+    </main>
+
+    <footer class="Footer">
+        <p class="Footer__texto">Front-end store - Todos los derechos reservados 2024</p>
+    </footer>
+
+    
+    <script src="Js/carrito.js"></script>
+
+</body>
+</html>

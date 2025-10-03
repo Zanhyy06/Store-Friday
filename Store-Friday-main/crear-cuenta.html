@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/normalize.css">
+    <link rel="stylesheet" href="./Css/stely.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <title>FrontEnd Store - Registro</title>
+</head>
+<body>
+    <form class="formulario-pro">
+        <section>
+            <h2>Registrarse</h2>
+            <label for="documento">Número de Documento</label>
+            <input type="text" id="documento" required placeholder="Ej: 123456789">
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required placeholder="Tu nombre">
+
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" required placeholder="Tu apellido">
+
+            <label for="email" style="color:#FFCE00;font-size:1.1rem;display:block;margin-bottom:0.5rem;">
+                Correo Electrónico
+            </label>
+            <input type="email" id="email" required placeholder="tu@correo.com">
+        </section>
+        <section>
+            <button type="submit">Registrarse</button>
+            <p>¿Ya tienes una cuenta? 
+                <a href="Iniciar-sesion.html" style="color:#FFCE00;font-weight:bold;">Iniciar sesión</a>
+            </p>
+        </section>
+    </form>
+
+    <script src="Js/registro.js"></script>
+</body>
+</html>
